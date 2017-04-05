@@ -1,5 +1,13 @@
 <div class="change-content">
-	<table class="table">
+	<div class="table-catalog">
+		<p class="table__caption">Каталог - аренда сейфов</p>
+		<div class="table__title"><span class="table__title-name">Наименование</span><span class="table__title-desc">Описание</span><span class="table__title-price">Стоимость (тыс. у.е.)</span>
+		</div>
+		<a ng-repeat="product in store.products" href="catalog.html#!/product/{{product.id}}" ng-click = "store.activePage('product-page', product)" class="table__row">
+			<prod-item></prod-item>
+		</a>
+	</div>
+	<!-- <table class="table">
 		<caption class="table__caption">Каталог - аренда сейфов</caption>
 		<tr class="table__title table__row">
 			<th colspan="2" class="table__title-name">Наименование</th>
@@ -9,5 +17,5 @@
 		<tr ng-repeat="product in store.products" class="table__row" prod-item>
 
 		</tr>
-	</table>
+	</table> -->
 </div>

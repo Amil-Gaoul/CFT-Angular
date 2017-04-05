@@ -16,7 +16,7 @@
 	// срока таблицы
 	app.directive('prodItem', function() {
 		return {
-			restrict: 'A',
+			restrict: 'E',
 			templateUrl: 'template/product-item/index.html'
 		};
 	});
