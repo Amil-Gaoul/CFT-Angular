@@ -370,10 +370,20 @@ img {
 	border-bottom: 0;
 }
 
-.table__row:hover {
-	cursor: pointer;
-	border: 1px solid #f13843;
+.table_href {
+	color: #5f5f5f;
+	text-decoration: none;
 }
+
+.table_href:hover {
+	color: #f13843;
+	text-decoration: underline;
+}
+
+// .table__row:hover {
+// 	cursor: pointer;
+// 	border: 1px solid #f13843;
+// }
 
 .table__row:nth-child(1):hover {
 	cursor: default;

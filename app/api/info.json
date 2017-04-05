@@ -1,5 +1,6 @@
 [
 	{
+		"id": 1,
 		"link": "app.html",
 		"image": "img/shot-2.png",
 		"name": "Стандартный пакет",
@@ -8,6 +9,7 @@
 		"price": 4.99
 	},
 	{
+		"id": 2,
 		"link": "app.html",
 		"image": "img/shot-2.png",
 		"name": "Новый ЦФТ-Банк",
@@ -16,6 +18,7 @@
 		"price": 5.99
 	},
 	{
+		"id": 3,
 		"link": "app.html",
 		"image": "img/shot-2.png",
 		"name": "Cash Management",
@@ -24,6 +27,7 @@
 		"price": 145.99
 	},
 	{
+		"id": 4,
 		"link": "app.html",
 		"image": "img/shot-2.png",
 		"name": "Аренда сейфов",
@@ -32,6 +36,7 @@
 		"price": 599.99
 	},
 	{
+		"id": 5,
 		"link": "app.html",
 		"image": "img/shot-2.png",
 		"name": "Банковские гарантии",
@@ -40,6 +45,7 @@
 		"price": 2.99
 	},
 	{
+		"id": 6,
 		"link": "app.html",
 		"image": "img/shot-2.png",
 		"name": "Казначейство",
@@ -48,6 +54,7 @@
 		"price": 4.99
 	},
 	{
+		"id": 7,
 		"link": "app.html",
 		"image": "img/shot-2.png",
 		"name": "Страхование",
@@ -56,6 +63,7 @@
 		"price": 5.99
 	},
 	{
+		"id": 8,
 		"link": "app.html",
 		"image": "img/shot-2.png",
 		"name": "Факторинговое обслуживание",
@@ -64,6 +72,7 @@
 		"price": 4.99
 	},
 	{
+		"id": 9,
 		"link": "app.html",
 		"image": "img/shot-2.png",
 		"name": "Переводы средств",
@@ -72,6 +81,7 @@
 		"price": 4.99
 	},
 	{
+		"id": 10,
 		"link": "app.html",
 		"image": "img/shot-2.png",
 		"name": "Расчетный центр",
@@ -80,6 +90,7 @@
 		"price": 4.99
 	},
 	{
+		"id": 11,
 		"link": "app.html",
 		"image": "img/shot-2.png",
 		"name": "Пластиковые карты",
@@ -88,6 +99,7 @@
 		"price": 4.99
 	},
 	{
+		"id": 12,
 		"link": "app.html",
 		"image": "img/shot-2.png",
 		"name": "Финансовый мониторинг",
@@ -96,6 +108,7 @@
 		"price": 4.99
 	},
 	{
+		"id": 13,
 		"link": "app.html",
 		"image": "img/shot-2.png",
 		"name": "Депозиты и вклады",
@@ -104,6 +117,7 @@
 		"price": 4.99
 	},
 	{
+		"id": 14,
 		"link": "app.html",
 		"image": "img/shot-2.png",
 		"name": "Инвестиции",

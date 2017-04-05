@@ -1,5 +1,22 @@
 (function(){
-	var app = angular.module('store', ['storeDirectives']);
+	var app = angular.module('store', ['storeDirectives', 'ngRoute'])
+	.config(function($routeProvider){
+		$routeProvider.when('/catalog',
+		{
+			templateUrl:'template/catalog/index.html',
+			controller:'StoreController'
+		});
+		$routeProvider.when('/product/:id',
+		{
+			templateUrl:'template/product-page/index.html',
+			controller: 'LinkController'
+		});
+		$routeProvider.when('/',
+		{
+			templateUrl:'template/catalog/index.html',
+			controller:'StoreController'
+		});
+	});
 
 	app.factory('httpq', function($http, $q){
 	return{
@@ -10,7 +27,19 @@
 				.catch(deffered.resolve);
 				return deffered.promise;
 		}
-		}
+		};
+	});
+
+	app.controller("LinkController", function($http, $routeParams, $scope, httpq){
+
+		httpq.get('api/products.json')
+		.then(function(data){
+			$scope.pageData = data.data[$routeParams.id];
+		})
+		.catch(function(){
+			alert("Error httpRequset");
+		});
+
 	});
 
 	app.controller('StoreController', function(httpq){

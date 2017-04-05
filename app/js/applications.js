@@ -17,7 +17,7 @@
 	app.directive('prodItem', function() {
 		return {
 			restrict: 'A',
-			templateUrl: 'template/product-item.html'
+			templateUrl: 'template/product-item/index.html'
 		};
 	});
 
@@ -25,7 +25,7 @@
 		return {
 			restrict: 'E',
 			replace: true,
-			templateUrl: 'template/categories.html'
+			templateUrl: 'template/catalog/index.html'
 		};
 	});
 
@@ -33,7 +33,7 @@
 		return {
 			restrict: 'E',
 			replace: true,
-			templateUrl: 'template/product-page.html'
+			templateUrl: 'template/product-page/index.html'
 		};
 	});
 

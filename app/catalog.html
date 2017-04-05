@@ -5,6 +5,7 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script type="text/javascript" src="js/vendor/angular.min.js"></script>
+		<script type="text/javascript" src="js/vendor/angular-route.min.js"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -24,14 +25,14 @@
 					<div class="aside-catalog__title">Каталог приложений</div>
 					<ul class="aside-catalog__list">
 						<li ng-repeat="product in store.products">
-							<a class="aside-catalog__list_link" href ng-click="store.activePage('product-page', product)">{{product.name}}</a>
+							<a class="aside-catalog__list_link" href="catalog.html#!/product/{{product.id}}" ng-click = "store.activePage('product-page', product)">{{product.name}}</a>
 						</li>
 					</ul>
 				</div>
-				<div class="content">
-					<content-categories ng-switch-when="categories"></content-categories>
+				<div class="content" ng-view>
+					<!-- <content-categories ng-switch-when="categories"></content-categories>
 					<prod-page ng-switch-when="product-page"></prod-page>
-					<content-categories ng-switch-default></content-categories>
+					<content-categories ng-switch-default></content-categories> -->
 				</div>
 				<div class="clearfix"></div>
 			</section>
